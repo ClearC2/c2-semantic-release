@@ -58,7 +58,35 @@ semantic-release to be able to push releases to GitHub.
 
 ## Usage
 After you `git add <files>`, use `yarn cm` instead of `git commit` from now on. This will trigger commitizen
-to walk you through creating a formatted commit message.
+to walk you through creating a formatted commit message. The commit will end up in this format:
+
+```
+<type>(<scope>): <short imperative subject>
+<BLANK LINE>
+<a longer description if necessary>
+<BLANK LINE>
+BREAKING CHANGES: <description of breaking changes>
+<BLANK LINE>
+<github issue references>
+```
+
+Example with breaking changes:
+```
+refactor(form): rename form HOC
+
+The original export name was ambiguous. The new name conveys its use much more clearly.
+
+BREAKING CHANGES: Renamed "form" export to "formHOC"
+
+closes #154. closes #157.
+```
+
+Example without breaking changes, long description, or issue references:
+```
+feat(project): add project form
+```
+
+If you ever mess up in the middle of creating a commit with commitizen, `ctrl + c` to abort and start over.
 
 ## Project Maintainers
 When squashing and merging a PR that contains multiple commits you will need to reformat the message. Luckily, GitHub let's you do this in the
