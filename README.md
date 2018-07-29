@@ -35,6 +35,22 @@ Next, add the following as a run step in your project's `.circleci/config.yml` f
 - run: yarn run semantic-release
 ```
 
+By default, the release commit done by semantic-release will include any changes to the following after the build:
+
+- `package.json`
+- `yarn.lock`
+- `CHANGELOG.md`
+
+There shouldn't be any changes to `package.json` or `yarn.lock`(if you have a frozen lockfile). This just ensures that _if_ the build happens to update these files and the build passes, we will get those updates.
+
+If your project produces or changes other assets that you'd like to keep under version control set an `ASSETS` environment variable with the asset names. Ex:
+```
+- run:
+  command: yarn run semantic-release
+  environment:
+    ASSETS: dist,docs
+```
+
 If you don't have a `.circleci/config.yml`, create one using this project's as a template.
 
 Ping me(David Adams) when you get to this step. I will need to add a `GH_TOKEN` environment variable to your project's build on CircleCI for
@@ -57,7 +73,7 @@ web UI. For example, if the PR was titled "Add project form" and contained the f
 ```
 
 When you go to squash, all of the above will be in the commit message textarea in the GitHub UI. It would be reasonable to delete all of the
-above text and title the squashed commit `feat(project): add project form`.
+above text and retitle the squashed commit `feat(project): add project form`.
 
 ### Maintaining a previous major version
 - Checkout the latest version tag on that major version. `git checkout v1.3.2`
@@ -71,4 +87,4 @@ above text and title the squashed commit `feat(project): add project form`.
 - Create a PR to merge the bug fix branch into the maintenance branch.
 
 It's important to create a distinct `chore` commit that doesn't include changes to the code when creating the maintenance branch. This will allow you to
-cherry pick the bug fix over to your current version branch in a PR without bringing the branch name change in `package.json`.
+cherry pick the bug fix commit over to your current version branch in a PR without bringing the branch name change in `package.json`.
