@@ -12,18 +12,18 @@ Add the following to your project's `package.json` file.
 
 ```
 "scripts": {
-	// other scripts
-	"cm": "git-cz",
-	"semantic-release": "semantic-release"
+  // other scripts
+  "cm": "git-cz",
+  "semantic-release": "semantic-release"
 },
 "config": {
- "commitizen": {
-	"path": "./node_modules/cz-conventional-changelog"
- }
+  "commitizen": {
+    "path": "./node_modules/cz-conventional-changelog"
+  }
 },
 "release": {
- "branch": "<default-branch>",
- "extends": "c2-semantic-release"
+  "branch": "<default-branch>",
+  "extends": "c2-semantic-release"
 },
 ```
 
