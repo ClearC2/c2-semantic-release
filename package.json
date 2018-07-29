@@ -1,50 +1,26 @@
 {
-	"name": "c2-semantic-release",
-	"version": "1.0.0",
-	"main": "index.js",
-	"author": "David Adams",
-	"license": "MIT",
-	"private": true,
-	"scripts": {
-		"cm": "git-cz",
-		"semantic-release": "semantic-release"
-	},
-	"dependencies": {
-		"@semantic-release/changelog": "^3.0.0",
-		"@semantic-release/git": "^7.0.1",
-		"@semantic-release/github": "^5.0.1",
-		"@semantic-release/npm": "^4.0.1",
-		"commitizen": "^2.10.1",
-		"cz-conventional-changelog": "^2.1.0",
-		"semantic-release": "^15.8.1"
-	},
-	"config": {
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
-	},
-	"release": {
-		"npmPublish": false,
-		"verifyConditions": [
-			"@semantic-release/changelog",
-			"@semantic-release/github"
-		],
-		"prepare": [
-			"@semantic-release/changelog",
-			"@semantic-release/npm",
-			{
-				"path": "@semantic-release/git",
-				"assets": [
-					"package.json",
-					"yarn.lock",
-					"CHANGELOG.md",
-					"docs",
-					"dist"
-				]
-			}
-		],
-		"publish": [
-			"@semantic-release/github"
-		]
-	}
+  "name": "c2-semantic-release",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "David Adams",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "cm": "git-cz",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "@semantic-release/changelog": "^3.0.0",
+    "@semantic-release/git": "^7.0.1",
+    "@semantic-release/github": "^5.0.1",
+    "@semantic-release/npm": "^4.0.1",
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "semantic-release": "^15.8.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
