@@ -4,7 +4,7 @@ A shareable configuration for [semantic-release](https://github.com/semantic-rel
 
 ## Install
 ```
-yarn add ClearC2/c2-semantic-release#^1.0.0
+yarn add -D ClearC2/c2-semantic-release#^1.0.0
 ```
 
 ### `package.json`
