@@ -43,7 +43,7 @@ By default, the release commit done by semantic-release will include any changes
 
 There shouldn't be any changes to `package.json` or `yarn.lock`(if you have a frozen lockfile). This just ensures that _if_ the build happens to update these files and the build passes, we will get those updates.
 
-If your project produces or changes other assets that you'd like to keep under version control set an `ASSETS` environment variable with the asset names. Ex:
+If your project produces or changes other assets that you'd like to keep under version control, set an `ASSETS` environment variable with the asset names. Ex:
 ```
 - run:
   command: yarn run semantic-release
@@ -97,7 +97,7 @@ web UI. For example, if the PR was titled "Add project form" and contained the f
 - feat(project): add redux actions, reducers, selectors
 - fix(project): fix typo in selector
 - feat(project): add project form container
-- refactor(project): restructured container
+- refactor(project): restructure container
 ```
 
 When you go to squash, all of the above will be in the commit message textarea in the GitHub UI. It would be reasonable to delete all of the
