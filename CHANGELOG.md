@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/ClearC2/c2-semantic-release/compare/v1.1.0...v2.0.0) (2018-12-03)
+
+
+### Performance Improvements
+
+* **deps:** upgrade deps ([#4](https://github.com/ClearC2/c2-semantic-release/issues/4)) ([8d8a12a](https://github.com/ClearC2/c2-semantic-release/commit/8d8a12a))
+
+
+### BREAKING CHANGES
+
+* **deps:** requires node > 6
+
 # [1.1.0](https://github.com/ClearC2/c2-semantic-release/compare/v1.0.0...v1.1.0) (2018-07-29)
 
 
