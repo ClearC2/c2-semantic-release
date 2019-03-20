@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/ClearC2/c2-semantic-release/compare/v2.0.0...v2.0.1) (2019-03-20)
+
+
+### Bug Fixes
+
+* upgrade deps ([2372476](https://github.com/ClearC2/c2-semantic-release/commit/2372476))
+
 # [2.0.0](https://github.com/ClearC2/c2-semantic-release/compare/v1.1.0...v2.0.0) (2018-12-03)
 
 
