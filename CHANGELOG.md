@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/ClearC2/c2-semantic-release/compare/v2.0.2...v2.0.3) (2019-06-24)
+
+
+### Performance Improvements
+
+* upgrade commitizen ([31aa770](https://github.com/ClearC2/c2-semantic-release/commit/31aa770))
+
 ## [2.0.2](https://github.com/ClearC2/c2-semantic-release/compare/v2.0.1...v2.0.2) (2019-06-19)
 
 
