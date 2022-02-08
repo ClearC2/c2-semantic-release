@@ -10,13 +10,15 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "@semantic-release/changelog": "^3.0.0",
-    "@semantic-release/git": "^7.0.1",
-    "@semantic-release/github": "^5.0.1",
-    "@semantic-release/npm": "^5.1.1",
-    "commitizen": "^3.1.1",
-    "cz-conventional-changelog": "^2.1.0",
-    "semantic-release": "^15.12.4"
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "commitizen": "^4.2.4",
+    "semantic-release": "^19.0.2"
+  },
+  "peerDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "@semantic-release/github": "^8.0.0",
+    "@semantic-release/npm": "^9.0.0"
   },
   "config": {
     "commitizen": {
