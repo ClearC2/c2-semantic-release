@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/ClearC2/c2-semantic-release/compare/v2.0.3...v3.0.0) (2022-02-28)
+
+
+### Bug Fixes
+
+* upgrade packages for higher node version ([4beb8fe](https://github.com/ClearC2/c2-semantic-release/commit/4beb8fe349d2ee99d7e46c68a01be3274cb98d78))
+
+
+### BREAKING CHANGES
+
+* Upgrading packages to be Node v16 compatible
+
 ## [2.0.3](https://github.com/ClearC2/c2-semantic-release/compare/v2.0.2...v2.0.3) (2019-06-24)
 
 
