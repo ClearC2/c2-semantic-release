@@ -1,6 +1,6 @@
 {
   "name": "c2-semantic-release",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "index.js",
   "author": "David Adams",
   "license": "MIT",

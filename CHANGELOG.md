@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/ClearC2/c2-semantic-release/compare/v3.0.0...v3.0.1) (2022-03-01)
+
+
+### Bug Fixes
+
+* remove node engine in package.json ([4a68db0](https://github.com/ClearC2/c2-semantic-release/commit/4a68db0c5fd4fdc38473556400b97c93b4208e3b))
+
 # [3.0.0](https://github.com/ClearC2/c2-semantic-release/compare/v2.0.3...v3.0.0) (2022-02-28)
 
 
